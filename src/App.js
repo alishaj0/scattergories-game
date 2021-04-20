@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Letter from './letter/Letter';
+import Timer from './timer/Timer';
+import Categories from './categories/Categories';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // Using component name as className on parent element
+      <div className="App">
+        {/* Still referencing 'parent' Parentclassname(App)-NewClassName */}
+        <div className="App-Section-One">
+          <Letter />
+          <Timer />
+        </div>
+        <div className="App-Section-Two">
+          <Categories />
+        </div>
+
+      </div>
   );
 }
 

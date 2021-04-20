@@ -1,0 +1,46 @@
+.Timer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    border: 2px solid black;
+}
+  
+.Timer-Top {
+    /* <p> element & <button> element inside Timer-Top div */
+    font-size: 30px;
+    display: flex;
+        /* making <p> & <button> elements in Timer-Top class, as flexbox container (inside Timer class flexbox)  */
+    justify-content: space-between;
+    align-items: center;
+        /* space out between horizontally in flexbox - align centers vertically */
+
+    padding: 10px;
+}
+  
+.Timer-Top-Btn {
+    /* <button> only thing with this className */
+    padding: 3px;
+    font-size: 20px;
+}
+  
+.Timer-Top-Btn:hover {
+    /* Applied when :hover over btn */
+    border: 2px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+  
+.Timer-Display {
+    /* Timer-Display Div sharing space with Timer-Top inside the Letter class div  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+        /* Sharing space with Letter-Top class which is using remaining 25% height, for entire height in Letter class div */
+}
+  
+.Timer-Display-H1 {
+    font-size: 175px;
+}

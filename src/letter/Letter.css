@@ -1,0 +1,48 @@
+.Letter {
+    display: flex;
+    flex-direction: column;
+        /* Although flex-direction:column will return back vertically - do so, in order to style properly (center etc) the div with class of 'Letter' */
+    width: 100%;
+        /* width: 100% to take up the entire 30% width of the App-Section-One div that the <Letter /> component is rendered/run in */
+    height: 50%;
+        /* height: 50% to take up half of the height of the App-Section-One div that the <Letter /> component is rendered in */
+    border: 2px solid black;
+}
+
+.Letter-Top {
+    /* <p> element & <button> element inside Letter-Top div */
+    font-size: 30px;
+    display: flex;
+        /* making <p> & <button> elements in Letter-Top class, as flexbox container (inside Letter class flexbox)  */
+    justify-content: space-between;
+    align-items: center;
+        /* space out between horizontally in flexbox - align centers vertically */
+    padding: 10px;
+}
+
+.Letter-Top-Btn {
+    /* <button> only thing with this className */
+    padding: 3px;
+    font-size: 20px;
+}
+
+.Letter-Top-Btn:hover {
+    /* Applied when :hover over btn */
+    border: 2px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Letter-Display {
+    /* Letter-Display Div sharing space with Letter-Top inside the Letter class div  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+        /* Sharing space with Letter-Top class which is using remaining 25% height, for entire height in Letter class div */
+}
+
+.Letter-Display-H1 {
+    font-size: 175px;
+}
