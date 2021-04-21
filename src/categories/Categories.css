@@ -1,0 +1,60 @@
+.Categories {
+    display: flex;
+        /* Will only make the child elements of this div, flexbox items: Categories-Main and Categories-Secondary. Flexbox will not apply to children inside these child elements */
+    height: 100%;
+    width: 100%;
+}
+
+.Categories-Main {
+    display: flex;
+        /* applying flexbox to the child elements inside the Categories-Main: the Categories-Main-Top div and the Categories-Main-Display ol. */
+    flex-direction: column;
+    border: 2px solid black;
+    width: 70%;
+        /* To take up 70% of the 100% of the Categories div */
+}
+
+.Categories-Main-Top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        /* changed flex direction so use align-items to center on x axis */
+    padding: 10px;
+}
+
+.Categories-Main-Display {
+    height: 85%;
+    display: flex;
+        /* flexbox for list items in ol */
+    flex-direction: column;
+    justify-content: space-between;
+        /* space-between will "spread" list items in column (vertically - since changed flex-direction) through the flexbox, starting at the top of this ol element (align-items: flex-start) */
+    align-items: flex-start;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.Categories-Secondary {
+    display: flex;
+    align-items: center;
+    width: 30%;
+        /* Set Categories-Main as 70%, need to take up remaining space of Categories section */
+    border: 2px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Categories-Secondary:hover {
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+
+.Categories-Secondary-H1 {
+    text-align: center;
+}
+
+/* ClassList */
+.hide {
+    background-color: black;
+}
