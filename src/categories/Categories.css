@@ -54,7 +54,7 @@
     text-align: center;
 }
 
-/* ClassList */
+/* ClassList - .hide class to be used to hide list items upon ene of timer*/
 .hide {
     background-color: black;
 }

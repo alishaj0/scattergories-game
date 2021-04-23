@@ -8,9 +8,9 @@ const Letter = () => {
     // 'letters' array
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-    // Setting randomIndex function (inside changeLetter function), to choose a random letter from the letters array and set to value of 'setIndex' each time function is run - setIndex(randomIndex)
+    // Setting randomIndex function (inside changeLetter function), to choose a random number from the length of the letters string and set to value of 'setIndex' each time function is run - setIndex(randomIndex)
     // set onClick on button (in return) to run changeLetter function upon each click
-    // set text inside h1 as the value of index as it corresponds to the letters array
+    // set text inside h1 as the value of index as it corresponds to the letters string
     const changeLetter = () => {
         const randomIndex = Math.floor(Math.random() * letters.length);
         setIndex(randomIndex);
@@ -27,6 +27,7 @@ const Letter = () => {
             </div>
             <div className="Letter-Display">
                 <h1 className="Letter-Display-H1">
+                    {/* re-renders letter component with new value being plugged in for index */}
                     {letters[index]}
                 </h1>
             </div>
